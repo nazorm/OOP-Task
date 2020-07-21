@@ -25,6 +25,13 @@ Triangle.prototype.constructor = Triangle;
 
 t.constructor === Triangle; // True
 
+
+for (let property in t){
+    if(t.hasOwnpProperty(property)){
+        console.log(property)
+    }
+}
+
 Shape.prototype.isPrototypeOf(t);// True
 
 t.getPerimeter();//8
